@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/react-185/static/css/main.6eeab337.chunk.css",
+    "main.js": "/react-185/static/js/main.35a255fd.chunk.js",
+    "main.js.map": "/react-185/static/js/main.35a255fd.chunk.js.map",
+    "runtime-main.js": "/react-185/static/js/runtime-main.7a290a39.js",
+    "runtime-main.js.map": "/react-185/static/js/runtime-main.7a290a39.js.map",
+    "static/js/2.1932ab25.chunk.js": "/react-185/static/js/2.1932ab25.chunk.js",
+    "static/js/2.1932ab25.chunk.js.map": "/react-185/static/js/2.1932ab25.chunk.js.map",
+    "static/js/3.7641f015.chunk.js": "/react-185/static/js/3.7641f015.chunk.js",
+    "static/js/3.7641f015.chunk.js.map": "/react-185/static/js/3.7641f015.chunk.js.map",
+    "index.html": "/react-185/index.html",
+    "static/css/main.6eeab337.chunk.css.map": "/react-185/static/css/main.6eeab337.chunk.css.map",
+    "static/js/2.1932ab25.chunk.js.LICENSE.txt": "/react-185/static/js/2.1932ab25.chunk.js.LICENSE.txt",
+    "static/media/flowers1.6a897e9e.jpg": "/react-185/static/media/flowers1.6a897e9e.jpg",
+    "static/media/japan1.5573c7dc.jpg": "/react-185/static/media/japan1.5573c7dc.jpg",
+    "static/media/sky1.3b2c2d62.jpg": "/react-185/static/media/sky1.3b2c2d62.jpg",
+    "static/media/trees1.8f6da922.jpg": "/react-185/static/media/trees1.8f6da922.jpg",
+    "static/media/v1.62cfce86.mp4": "/react-185/static/media/v1.62cfce86.mp4",
+    "static/media/v3.cafe1c0b.mp4": "/react-185/static/media/v3.cafe1c0b.mp4",
+    "static/media/v4.9a6b74dd.mp4": "/react-185/static/media/v4.9a6b74dd.mp4",
+    "static/media/v5.dc5b5daa.mp4": "/react-185/static/media/v5.dc5b5daa.mp4",
+    "static/media/v6.cf70f757.mp4": "/react-185/static/media/v6.cf70f757.mp4",
+    "static/media/video1.c1bbded3.jpg": "/react-185/static/media/video1.c1bbded3.jpg",
+    "static/media/video3.0c5b711c.jpg": "/react-185/static/media/video3.0c5b711c.jpg",
+    "static/media/video4.e855921c.jpg": "/react-185/static/media/video4.e855921c.jpg",
+    "static/media/video5.e82643ef.jpg": "/react-185/static/media/video5.e82643ef.jpg",
+    "static/media/video6.4bdde291.jpg": "/react-185/static/media/video6.4bdde291.jpg",
+    "static/media/view1.f48abaec.jpg": "/react-185/static/media/view1.f48abaec.jpg",
+    "static/media/view2.639bdf70.jpg": "/react-185/static/media/view2.639bdf70.jpg",
+    "static/media/view3.786fc52b.jpg": "/react-185/static/media/view3.786fc52b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a290a39.js",
+    "static/js/2.1932ab25.chunk.js",
+    "static/css/main.6eeab337.chunk.css",
+    "static/js/main.35a255fd.chunk.js"
+  ]
+}
