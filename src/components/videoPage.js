@@ -36,17 +36,17 @@ function Videodata() {
 
         <div>
 
-            <body>
+            <body> 
 
             <div className = "flex-container">
 
                 <div className = "vids" style = {ITEM}>
-                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
+                    <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
                     <Modal open={isOpen} onClose={() => setIsOpen(false)}>
                     <ReactPlayer
                         className='react-player'
-                        url= {v5}
+                        url= {v1}
                         width='100%'
                         height='100%'
                         controls = {true}

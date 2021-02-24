@@ -1,20 +1,21 @@
 .nav-bar {
   display: flex;
 
+  text-align: center;
+ 
+  text-decoration: none;
+  background-color: #493a3a;
+  font-size: 25px;
+  font-family: 'Serif';
+  padding: "0px 15px";
+  color: white;
+  
+  top: 50%;
+  left: 50%;
 
-    text-align: center;
-    padding: 25px 35px;
-    text-decoration: none;
-    background-color: #493a3a;
-    font-size: 30px;
-
+  width: 100%;
+  overflow: auto;
     
-    top: 50%;
-    left: 50%;
-
-    background-color: #493a3a;
-    width: 100%;
-    overflow: auto;
 }
 
 /*

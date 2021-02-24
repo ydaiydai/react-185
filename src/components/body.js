@@ -1,36 +1,14 @@
 import React, { Component } from 'react';
-import Textdata from './page1';
-import Imagedata from './page2';
-import Videodata from './page3';
-import Images from './imagePage';
+
+import Textdata from './textPage';
+import Videodata from './videoPage';
+import Imagedata from './imagePage';
+import Tabledata from './tablePage';
+import Emaildata from './emailPage';
 
 import '../style.css'
-import Tabledata from './page4';
-import ValidationForm from './page5';
 
 class Body extends Component {
-
-    componentDidMount(){
-        //An array of assets
-        let scripts = [
-            { src: "./backTop.js"},
-            { src: "./image.js"},
-            { src: "./video.js"},
-            { src: "./emailCheck.js"},
-            //{ src: "assets/vendor/bootstrap/js/bootstrap.js" },
-            //{ src: "assets/vendor/jquery-placeholder/jquery.placeholder.js" },
-            //{ src: "assets/javascripts/theme.js" },
-            //{ src: "assets/javascripts/theme.custom.js" },
-            //{ src: "assets/javascripts/theme.init.js" }
-        ]
-        //Append the script element on each iteration
-        scripts.map(item => { 
-            const script = document.createElement("script")
-            script.src = item.src
-            script.async = true
-            document.body.appendChild(script)
-        })    
-     }
 
     render() {
 
@@ -40,7 +18,7 @@ class Body extends Component {
                 return <Textdata/>
             }
             else if (activetab == 2){
-                return <Images/>
+                return <Imagedata/>
             }
             else if (activetab == 3){
                 return <Videodata/>
@@ -49,10 +27,10 @@ class Body extends Component {
                 return <Tabledata/>
             }
             else if (activetab == 5){
-                return <ValidationForm/>
+                return <Emaildata/>
             }
             else{
-                return <div className = "text">page 4</div>
+                return <div className = "text">page 6</div>
             }
         }
 

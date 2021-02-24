@@ -28,19 +28,19 @@ const ITEM = {
     borderRadius: '5px'
 }
 
-export default function Images() {
-  const [isOpen, setIsOpen] = useState(false)
-  return (
-    <>  
-        
-              
+function Imagedata() {
+    const [isOpen, setIsOpen] = useState(false)
+    return (
+        <>  
+
+
         <div  className = "flex-container">
             <div className = "item" style = {ITEM}>
-                <img src = {view1} alt = "Lake" onClick={() => setIsOpen(true)}/>
-                <figcaption>Image Source: http://www.alaskademocrats.org/</figcaption>
+                <img src = {view2} alt = "Sky" onClick={() => setIsOpen(true)}/>
+                <figcaption>Image Source: https://www.fodors.com/world/north-america/usa/alaska/experiences/news/ultimate-things-to-do-in-alaska</figcaption>
 
                 <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-                    <img src = {view1} alt = "Lake"/>
+                    <img src = {view2} alt = "Sky"/>
                 </Modal>
             </div>
             
@@ -217,11 +217,11 @@ export default function Images() {
             </div>
 
             <div className = "item" style = {ITEM}>
-                <img src = {view1} alt = "Lake" onClick={() => setIsOpen(true)}/>
-                <figcaption>Image Source: http://www.alaskademocrats.org/</figcaption>
+                <img src = {view2} alt = "Sky" onClick={() => setIsOpen(true)}/>
+                <figcaption>Image Source: https://www.fodors.com/world/north-america/usa/alaska/experiences/news/ultimate-things-to-do-in-alaska</figcaption>
 
                 <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-                    <img src = {view1} alt = "Lake"/>
+                    <img src = {view2} alt = "Sky"/>
                 </Modal>
             </div>
 
@@ -230,3 +230,5 @@ export default function Images() {
     </>
   )
 }
+
+export default Imagedata

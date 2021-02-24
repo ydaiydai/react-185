@@ -1,59 +1,17 @@
+/*
+    Source References:
+        https://www.youtube.com/watch?v=FM2RN8rHCTE&list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM&index=12
+        https://www.coderomeos.org/scroll-to-top-of-the-page-a-simple-react-component
+        https://www.youtube.com/watch?v=LyLa7dU5tp8&list=LL&index=1&t=631s
+*/
+
 import React, {Component} from 'react';
 import Tablist from "./components/tablist"; 
 import Body from "./components/body";
-import { useState } from 'react'
 
 import './App.css'
 //import './style.css'
 import ScrollToTopBtn from "../src/components/backTop";
-
-/*
-function App() {
-
-  const [active, setactive] = useState(1)
-  const tabs =[{
-    id: 1,
-    title: 'Text'
-},
-{
-    id: 2,
-    title: 'Image'
-},
-{
-    id: 3,
-    title: 'Video'
-},
-{
-    id: 4,
-    title: 'Table'
-},
-{
-    id: 5,
-    title: 'Email'
-}]
-
-  const changetab = (id) =>{
-    setactive(id)
-  }
-
-return (
-  <div className="App">
-    <h1>Tabs Demo</h1>
-    <div className="nav-bar">
-      <Tablist tabs = {tabs} activetab = {active} ctab = {changetab}/>
-    </div>
-
-    <div className="main-body">
-      <Body activetab = {active}/>
-    </div>
-
-
-    <ScrollToTopBtn />
-
-  </div>
-);
-}
-*/
 
 class App extends Component {
   constructor(){
@@ -63,7 +21,7 @@ class App extends Component {
     }
     this.changetab =(id) =>{
       this.setState({
-        active :id
+        active : id
       })
     }
   }
@@ -71,33 +29,31 @@ class App extends Component {
   render(){
     const tabs =[{
       id:1,
-      title: 'Text___'
+      title: 'Text'
   },
   {
       id:2,
-      title: 'Image___'
+      title: 'Image'
   },
   {
       id:3,
-      title: 'Video___'
+      title: 'Video'
   },
   {
       id:4,
-      title: 'Table___'
+      title: 'Table'
   },
   {
       id:5,
-      title: 'Email___'
+      title: 'Email'
   }]
 
   return (
     <div className="App">
       
       <div className="nav-bar">
-        <Tablist tabs = {tabs} activetab = {this.state.active} ctab = {this.changetab}/>
-        
+        <Tablist tabs = {tabs} activetab = {this.state.active} ctab = {this.changetab}/> 
       </div>
-
       <div className="main-body">
         <Body activetab = {this.state.active}/>
       </div>
@@ -107,7 +63,5 @@ class App extends Component {
   );
   }
 }
-
-
 
 export default App;

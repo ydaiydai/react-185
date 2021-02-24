@@ -1,36 +1,39 @@
+// Reference: https://www.coderomeos.org/scroll-to-top-of-the-page-a-simple-react-component
+
 import React, { useEffect, useState } from "react";
+import "../style.css"
 
-export default function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false);
+import bttbutton from "./images/BackToTopButton.jpg";
 
-  // Show button when page is scorlled upto given distance
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 200) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+function ScrollToTop() {
+    const [isVisible, setIsVisible] = useState(false);
 
-  // Set the top cordinate to 0
-  // make scrolling smooth
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
+    const visibilityToggle = () => {
+        if (window.pageYOffset > window.outerHeight/8) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
 
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-  }, []);
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
 
-  return (
-    <div className="scroll-to-top">
-      {isVisible && 
-        <div onClick={scrollToTop}>
-          <img src='https://i.postimg.cc/44Ytsk8Z/top-arrow-emoj.png' alt='Go to top'/>
-        </div>}
-    </div>
-  );
+    useEffect(() => {
+        window.addEventListener("scroll", visibilityToggle);
+    }, []);
+
+    return (
+        <div className="scroll-to-top">
+            {isVisible && 
+                <div onClick={scrollToTop}>
+                    <img src={bttbutton} alt='Scroll to Top' />
+                </div>}
+        </div>
+    );
 }
+
+export default ScrollToTop

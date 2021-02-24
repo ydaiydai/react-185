@@ -2,16 +2,12 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import '../style.css'
 
-//import './backTop'
-
 function Tabledata() {
     
     return (
 
         <div>
             <body>
-
-        <li><a href="#"><button id = "btn" title = "Scroll-to-Top">Back to Top</button></a></li>
 
         <div class = "title"><h1>Projects</h1></div>
         <table>

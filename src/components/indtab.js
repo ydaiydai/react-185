@@ -17,10 +17,10 @@ function Itab (props){
 
     const addstyle = () =>{
         if (props.activetab == props.out.id){
-            return {backgroundColor:'red'}
+            return {display: 'block', backgroundColor:'green', padding: "25px 20px" }
         }
         else{
-            return {styles}
+            return {display: 'block', padding: "25px 20px"}
         }       
     };
 

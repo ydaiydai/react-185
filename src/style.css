@@ -272,8 +272,9 @@ figcaption{
 
 .scroll-to-top {
     position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    animation: fadeIn 700ms ease-in-out 1s both;
+    bottom: 2.5rem;
+    right: 2rem;
+    
     cursor: pointer;
+    width: 250px;
   }
