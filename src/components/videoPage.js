@@ -39,12 +39,54 @@ function Videodata() {
             <div className = "flex-container">
 
                 <div className = "vids" style = {ITEM}>
+                    <img src = {video3} alt = "Video3" class = "play-btn" onClick={() => setIsOpen(true)}/>
+
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v3}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
+                </div>
+
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video3} alt = "Video3" class = "play-btn" onClick={() => setIsOpen(true)}/>
+
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v3}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
+                </div>
+
+                <div className = "vids" style = {ITEM}>
                     <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
                     <Modal open={isOpen} onClose={() => setIsOpen(false)}>
                     <ReactPlayer
                         className='react-player'
                         url= {v1}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
+                </div>
+
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
+
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v5}
                         width='100%'
                         height='100%'
                         controls = {true}
@@ -95,54 +137,12 @@ function Videodata() {
                 </div>
 
                 <div className = "vids" style = {ITEM}>
-                    <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
+                    <img src = {video3} alt = "Video3" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
                     <Modal open={isOpen} onClose={() => setIsOpen(false)}>
                     <ReactPlayer
                         className='react-player'
-                        url= {v1}
-                        width='100%'
-                        height='100%'
-                        controls = {true}
-                    />
-                    </Modal>
-                </div>
-
-                <div className = "vids" style = {ITEM}>
-                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
-
-                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-                    <ReactPlayer
-                        className='react-player'
-                        url= {v5}
-                        width='100%'
-                        height='100%'
-                        controls = {true}
-                    />
-                    </Modal>
-                </div>
-
-                <div className = "vids" style = {ITEM}>
-                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
-
-                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-                    <ReactPlayer
-                        className='react-player'
-                        url= {v5}
-                        width='100%'
-                        height='100%'
-                        controls = {true}
-                    />
-                    </Modal>
-                </div>
-
-                <div className = "vids" style = {ITEM}>
-                    <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
-
-                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-                    <ReactPlayer
-                        className='react-player'
-                        url= {v1}
+                        url= {v3}
                         width='100%'
                         height='100%'
                         controls = {true}
