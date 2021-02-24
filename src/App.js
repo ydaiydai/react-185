@@ -101,6 +101,8 @@ class App extends Component {
       <div className="main-body">
         <Body activetab = {this.state.active}/>
       </div>
+
+      <ScrollToTopBtn />
     </div>
   );
   }

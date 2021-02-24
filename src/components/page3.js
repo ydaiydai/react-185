@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
+import ReactPlayer from 'react-player'
+import Modal from './modal'
+
 import '../style.css'
 //import './backTop'
 import './video'
@@ -16,206 +19,139 @@ import v4 from './videos/v4.mp4'
 import v5 from './videos/v5.mp4'
 import v6 from './videos/v6.mp4'
 
+const ITEM = {
+    flex: '20%',
+    boxSizing: 'border-box',
+
+    margin: '2rem',
+    padding: '1rem',
+    border: '1px solid white',
+    borderRadius: '5px'
+}
 
 function Videodata() {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
 
         <div>
 
             <body>
 
-            <li><a href="#"><button id = "btn" title = "Scroll-to-Top">Back to Top</button></a></li>
+            <div className = "flex-container">
 
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
-
-            <div class = "flex-container">
-
-                <div class = "vids">
-                    <img src = {video1} alt = "Video1" class = "play-btn" onclick = "playVideo({v1})"/>
-
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v5}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4)"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v1}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video3} alt = "Video3" class = "play-btn" onclick = "playVideo('videos/v3.mp4')"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video3} alt = "Video3" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v3}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video4} alt = "Video4" class = "play-btn" onclick = "playVideo('videos/v4.mp4')"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v5}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v1}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video6} alt = "Video6" class = "play-btn" onclick = "playVideo('videos/v6.mp4')"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v5}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video1} alt = "Video1" class = "play-btn" onclick = "playVideo('videos/v1.mp4')"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video5} alt = "Video5" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v5}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
+                <div className = "vids" style = {ITEM}>
+                    <img src = {video1} alt = "Video1" class = "play-btn" onClick={() => setIsOpen(true)}/>
 
+                    <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                    <ReactPlayer
+                        className='react-player'
+                        url= {v1}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                    />
+                    </Modal>
                 </div>
 
-                <div class = "vids">
-                    <img src = {video3} alt = "Video3" class = "play-btn" onclick = "playVideo('videos/v3.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video4} alt = "Video4" class = "play-btn" onclick = "playVideo('videos/v4.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video6} alt = "Video6" class = "play-btn" onclick = "playVideo('videos/v6.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video1} alt = "Video1" class = "play-btn" onclick = "playVideo('videos/v1.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video3} alt = "Video3" class = "play-btn" onclick = "playVideo('videos/v3.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video4} alt = "Video4" class = "play-btn" onclick = "playVideo('videos/v4.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video6} alt = "Video6" class = "play-btn" onclick = "playVideo('videos/v6.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video1} alt = "Video1" class = "play-btn" onclick = "playVideo('videos/v1.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video3} alt = "Video3" class = "play-btn" onclick = "playVideo('videos/v3.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video4} alt = "Video4" class = "play-btn" onclick = "playVideo('videos/v4.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video6} alt = "Video6" class = "play-btn" onclick = "playVideo('videos/v6.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video1} alt = "Video1" class = "play-btn" onclick = "playVideo('videos/v1.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video3} alt = "Video3" class = "play-btn" onclick = "playVideo('videos/v3.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video4} alt = "Video4" class = "play-btn" onclick = "playVideo('videos/v4.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video6} alt = "Video6" class = "play-btn" onclick = "playVideo('videos/v6.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video1} alt = "Video1" class = "play-btn" onclick = "playVideo('videos/v1.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video3} alt = "Video3" class = "play-btn" onclick = "playVideo('videos/v3.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video4} alt = "Video4" class = "play-btn" onclick = "playVideo('videos/v4.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video5} alt = "Video5" class = "play-btn" onclick = "playVideo('videos/v5.mp4')"/>
-
-                </div>
-
-                <div class = "vids">
-                    <img src = {video6} alt = "Video6" class = "play-btn" onclick = "playVideo('videos/v6.mp4')"/>
-
-                </div>
-
-            </div>
-
-            <div class = "video-player" id = "videoPlayer">
-                <video width = "100%" controls id = "myVideo">
-                    <source src = "videos/v1.mp4" type = "video/mp4"/>
-                </video>
             </div>
 
             </body>

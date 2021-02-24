@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Textdata from './page1';
 import Imagedata from './page2';
 import Videodata from './page3';
+import Images from './imagePage';
 
 import '../style.css'
 import Tabledata from './page4';
-import Emaildata from './page5';
+import ValidationForm from './page5';
 
 class Body extends Component {
 
@@ -39,7 +40,7 @@ class Body extends Component {
                 return <Textdata/>
             }
             else if (activetab == 2){
-                return <Imagedata/>
+                return <Images/>
             }
             else if (activetab == 3){
                 return <Videodata/>
@@ -48,7 +49,7 @@ class Body extends Component {
                 return <Tabledata/>
             }
             else if (activetab == 5){
-                return <Emaildata/>
+                return <ValidationForm/>
             }
             else{
                 return <div className = "text">page 4</div>
