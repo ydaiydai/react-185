@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-185/static/css/main.6eeab337.chunk.css",
-    "main.js": "/react-185/static/js/main.35a255fd.chunk.js",
-    "main.js.map": "/react-185/static/js/main.35a255fd.chunk.js.map",
-    "runtime-main.js": "/react-185/static/js/runtime-main.7a290a39.js",
-    "runtime-main.js.map": "/react-185/static/js/runtime-main.7a290a39.js.map",
-    "static/js/2.1932ab25.chunk.js": "/react-185/static/js/2.1932ab25.chunk.js",
-    "static/js/2.1932ab25.chunk.js.map": "/react-185/static/js/2.1932ab25.chunk.js.map",
-    "static/js/3.7641f015.chunk.js": "/react-185/static/js/3.7641f015.chunk.js",
-    "static/js/3.7641f015.chunk.js.map": "/react-185/static/js/3.7641f015.chunk.js.map",
+    "main.js": "/react-185/static/js/main.11f7345a.chunk.js",
+    "main.js.map": "/react-185/static/js/main.11f7345a.chunk.js.map",
+    "runtime-main.js": "/react-185/static/js/runtime-main.52a91f10.js",
+    "runtime-main.js.map": "/react-185/static/js/runtime-main.52a91f10.js.map",
+    "static/js/2.50e9fb22.chunk.js": "/react-185/static/js/2.50e9fb22.chunk.js",
+    "static/js/2.50e9fb22.chunk.js.map": "/react-185/static/js/2.50e9fb22.chunk.js.map",
+    "static/js/3.ecf6f0d7.chunk.js": "/react-185/static/js/3.ecf6f0d7.chunk.js",
+    "static/js/3.ecf6f0d7.chunk.js.map": "/react-185/static/js/3.ecf6f0d7.chunk.js.map",
     "index.html": "/react-185/index.html",
     "static/css/main.6eeab337.chunk.css.map": "/react-185/static/css/main.6eeab337.chunk.css.map",
-    "static/js/2.1932ab25.chunk.js.LICENSE.txt": "/react-185/static/js/2.1932ab25.chunk.js.LICENSE.txt",
+    "static/js/2.50e9fb22.chunk.js.LICENSE.txt": "/react-185/static/js/2.50e9fb22.chunk.js.LICENSE.txt",
     "static/media/flowers1.6a897e9e.jpg": "/react-185/static/media/flowers1.6a897e9e.jpg",
     "static/media/japan1.5573c7dc.jpg": "/react-185/static/media/japan1.5573c7dc.jpg",
     "static/media/sky1.3b2c2d62.jpg": "/react-185/static/media/sky1.3b2c2d62.jpg",
@@ -31,9 +31,9 @@
     "static/media/view3.786fc52b.jpg": "/react-185/static/media/view3.786fc52b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a290a39.js",
-    "static/js/2.1932ab25.chunk.js",
+    "static/js/runtime-main.52a91f10.js",
+    "static/js/2.50e9fb22.chunk.js",
     "static/css/main.6eeab337.chunk.css",
-    "static/js/main.35a255fd.chunk.js"
+    "static/js/main.11f7345a.chunk.js"
   ]
 }
