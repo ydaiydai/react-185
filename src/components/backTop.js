@@ -11,7 +11,8 @@ function ScrollToTop() {
     const visibilityToggle = () => {
         if (window.pageYOffset > window.outerHeight/8) {
             setIsVisible(true);
-        } else {
+        } 
+        else{
             setIsVisible(false);
         }
     };
@@ -28,10 +29,9 @@ function ScrollToTop() {
 
     return (
         <div className="scroll-to-top">
-            {isVisible && 
-                <div onClick={scrollToTop}>
-                    <img src={bttbutton} alt='Scroll to Top' />
-                </div>}
+            {isVisible && <div onClick={scrollToTop}>
+                <img src={bttbutton} alt='Scroll to Top' />
+            </div>}
         </div>
     );
 }

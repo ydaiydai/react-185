@@ -24,8 +24,10 @@ const overlay_styles = {
 }
 
 function Modal({ open, children, onClose }) {
-  if (!open) return null
-
+  if (!open) {
+    return null
+  }
+  
   return ReactDom.createPortal(
     <>
       <div style={overlay_styles} onClick={onClose}/>

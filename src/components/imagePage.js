@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Modal from './modal'
 
 import '../style.css'
-//import './image.js'
 
 import view1 from './images/view1.jpg'
 import view2 from './images/view2.jpg'
@@ -12,11 +11,6 @@ import japan1 from './images/japan1.jpg'
 import trees1 from './images/trees1.jpg'
 import flowers1 from './images/flowers1.jpg'
 
-
-const FLEX_CONTAINER = {
-    flex: 1,
-    flexDirection: 'row',
-}
 
 const ITEM = {
     flex: '20%',
@@ -30,9 +24,7 @@ const ITEM = {
 
 function Imagedata() {
     const [isOpen, setIsOpen] = useState(false)
-    return (
-        <>  
-
+    return (  
 
         <div  className = "flex-container">
             <div className = "item" style = {ITEM}>
@@ -225,9 +217,8 @@ function Imagedata() {
                 </Modal>
             </div>
 
-            </div>
+            </div>  
     
-    </>
   )
 }
 

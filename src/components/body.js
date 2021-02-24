@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import Textdata from './textPage';
-import Videodata from './videoPage';
 import Imagedata from './imagePage';
+import Videodata from './videoPage';
 import Tabledata from './tablePage';
 import Emaildata from './emailPage';
 

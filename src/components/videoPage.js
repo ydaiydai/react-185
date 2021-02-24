@@ -4,8 +4,6 @@ import ReactPlayer from 'react-player'
 import Modal from './modal'
 
 import '../style.css'
-//import './backTop'
-import './video'
 
 import video1 from './images/video1.jpg'
 import video3 from './images/video3.jpg'
